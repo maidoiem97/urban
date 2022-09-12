@@ -1,0 +1,561 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.row {
+  width: calc(100% + 15px*2);
+  float: left;
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.col {
+  width: 100%;
+  float: left;
+  padding: 0 15px;
+  transition: 0.2s; }
+
+/* dùng xs cho màn điện thoại có kích thước nhỏ hơn 576px */
+@media only screen and (max-width: 575px) {
+  .container {
+    max-width: 100%; }
+
+  .col-xs-1 {
+    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
+
+  .col-xs-2 {
+    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
+
+  .col-xs-3 {
+    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
+
+  .col-xs-4 {
+    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
+
+  .col-xs-5 {
+    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
+
+  .col-xs-6 {
+    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
+
+  .col-xs-7 {
+    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
+
+  .col-xs-8 {
+    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
+
+  .col-xs-9 {
+    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
+
+  .col-xs-10 {
+    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
+
+  .col-xs-11 {
+    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
+
+  .col-xs-12 {
+    width: 100%; } }
+/* dùng sm cho màn điện thoại có kích thước lớn hơn 576px */
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 100%; }
+
+  .col-sm-1 {
+    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
+
+  .col-sm-2 {
+    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
+
+  .col-sm-3 {
+    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
+
+  .col-sm-4 {
+    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
+
+  .col-sm-5 {
+    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
+
+  .col-sm-6 {
+    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
+
+  .col-sm-7 {
+    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
+
+  .col-sm-8 {
+    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
+
+  .col-sm-9 {
+    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
+
+  .col-sm-10 {
+    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
+
+  .col-sm-11 {
+    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
+
+  .col-sm-12 {
+    width: 100%; } }
+/* dùng md cho màn điện thoại có kích thước lớn hơn 768px */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px; }
+
+  .col-md-1 {
+    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
+
+  .col-md-2 {
+    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
+
+  .col-md-3 {
+    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
+
+  .col-md-4 {
+    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
+
+  .col-md-5 {
+    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
+
+  .col-md-6 {
+    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
+
+  .col-md-7 {
+    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
+
+  .col-md-8 {
+    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
+
+  .col-md-9 {
+    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
+
+  .col-md-10 {
+    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
+
+  .col-md-11 {
+    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
+
+  .col-md-12 {
+    width: 100%; } }
+/* dùng lg cho màn điện thoại có kích thước lớn hơn 992px */
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px; }
+
+  .col-lg-1 {
+    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
+
+  .col-lg-2 {
+    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
+
+  .col-lg-3 {
+    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
+
+  .col-lg-4 {
+    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
+
+  .col-lg-5 {
+    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
+
+  .col-lg-6 {
+    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
+
+  .col-lg-7 {
+    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
+
+  .col-lg-8 {
+    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
+
+  .col-lg-9 {
+    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
+
+  .col-lg-10 {
+    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
+
+  .col-lg-11 {
+    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
+
+  .col-lg-12 {
+    width: 100%; } }
+/* dùng xl cho màn điện thoại có kích thước lớn hơn 1200px */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px; }
+
+  .col-xl-1 {
+    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
+
+  .col-xl-2 {
+    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
+
+  .col-xl-3 {
+    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
+
+  .col-xl-4 {
+    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
+
+  .col-xl-5 {
+    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
+
+  .col-xl-6 {
+    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
+
+  .col-xl-7 {
+    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
+
+  .col-xl-8 {
+    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
+
+  .col-xl-9 {
+    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
+
+  .col-xl-10 {
+    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
+
+  .col-xl-11 {
+    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
+
+  .col-xl-12 {
+    width: 100%; } }
+/* 
+	thuộc tính transform dùng để tạo hiệu ứng
+		rotate(Độ:deg): hiệu ứng xoay VD rotate(90deg)
+		scale(kích thước phóng:số): hiệu ứng zoo VD scale(1)
+
+		translateX(px): di chuyển ngang
+		translateY(px): di chuyển dọc
+
+		skewX(Độ:deg): nghiêng ngang
+		skewY(Độ:deg): nghiêng dọc
+
+		transform-origin: Nó cho phép bạn định vị chiều rộng và chiều cao cho thành phần,
+		dùng chung với transform và có các thuộc tính: top bottom left right và %
+
+		Perspective: tạo hiệu ứng 3D nó sẽ cho ta thấy được chiều sâu của thành phần, 
+		khoảng chiều sâu được tính từ điểm đặt ban đầu tới giá trị của perspective (theo đơn vị pixel).
+	
+	cú pháp tạo 1 animation
+	@keyframes box-rotate-reverse {
+		50% {
+			transform: rotate(-180deg); 
+		}
+		100% { 
+			transform: rotate(-360deg); 
+		}
+	}
+	gọi
+	animation: NameKeyFrames duration(s) timing delay(s) iteration-count direction;
+*/
+/* dùng cho một vài thuộc tính riêng cho trình duyện VD: transition, box-shadow */
+/* căn giữa chiều dọc và ngang trên 1 box */
+/* background opacity */
+h3, h2, h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0975f5; }
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0em; }
+
+a {
+  color: #666; }
+
+.site_main .layout-pageContact .wrapbox-content-page-contact {
+  padding: 30px; }
+  .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact {
+    background: #fff;
+    padding: 20px;
+    border-radius: 2px;
+    border: 1px solid #e1e3e4; }
+    .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .header-page-contact h1 {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 0px 0;
+      color: #0975f5;
+      line-height: 1.2; }
+      .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .header-page-contact h1:after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 4px;
+        margin-top: 30px;
+        background: #252a2b;
+        margin-bottom: 50px; }
+    .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-info-contact .list-info {
+      margin-bottom: 10px; }
+      .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-info-contact .list-info li {
+        margin-bottom: 30px; }
+        .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-info-contact .list-info li p {
+          margin-bottom: 0;
+          color: #666;
+          font-weight: 500; }
+          .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-info-contact .list-info li p span {
+            font-weight: 600;
+            color: #666666; }
+    .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact {
+      display: flow-root; }
+      .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact h2 {
+        font-weight: 700;
+        font-size: 25px;
+        margin: 40px 0 35px; }
+        .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact h2:after {
+          content: "";
+          display: block;
+          margin-top: 25px;
+          width: 30px;
+          height: 3px;
+          background: #252a2b; }
+      .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form .input-group {
+        width: 100%;
+        margin-bottom: 20px; }
+        .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form .input-group input {
+          border: 1px solid #e7e7e7;
+          box-shadow: none;
+          height: 45px;
+          font-weight: 500;
+          padding: 0 20px;
+          background: #fff;
+          color: #666666;
+          width: 100%; }
+          .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form .input-group input::placeholder {
+            font-size: 14px;
+            color: #999;
+            font-family: 'Quicksand', sans-serif; }
+        .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form .input-group textarea {
+          border: 1px solid #e7e7e7;
+          box-shadow: none;
+          font-weight: 500;
+          background: #fff;
+          color: #666666;
+          width: 100%;
+          height: 130px;
+          padding: 20px 20px; }
+          .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form .input-group textarea::placeholder {
+            font-size: 14px;
+            color: #999;
+            font-family: 'Quicksand', sans-serif; }
+        .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form .input-group .sitebox-recaptcha {
+          padding: 0;
+          color: #9e9e9e;
+          font-size: 13px;
+          text-align: left;
+          line-height: 1.4;
+          font-family: 'Quicksand', sans-serif; }
+          .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form .input-group .sitebox-recaptcha a {
+            color: #2962ff; }
+      .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form .btn-39 {
+        border: 1px solid;
+        box-sizing: border-box;
+        display: block;
+        font-weight: 900;
+        overflow: hidden;
+        position: relative;
+        text-transform: uppercase; }
+      .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form .btn-39 .new {
+        background: #fff;
+        color: #000;
+        display: grid;
+        inset: 0;
+        place-content: center;
+        pointer-events: none;
+        position: absolute;
+        transform: translateX(-100%);
+        transition: transform 0.2s; }
+      .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form .btn-39:hover .new {
+        transform: translateX(0);
+        border: 1px solid #0975f5;
+        color: #666666; }
+      .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form button {
+        height: 55px;
+        line-height: 55px;
+        padding: 0 30px;
+        border-radius: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: 100%;
+        font-weight: 500;
+        display: inline-block;
+        padding: 10px 28px;
+        line-height: normal;
+        border: 1px solid #ffffff;
+        background: #0975f5;
+        color: #fff; }
+        .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form button::hover span {
+          color: #666666; }
+        .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form button span {
+          font-family: 'Quicksand', sans-serif;
+          text-align: center;
+          font-size: 12px;
+          text-align: center;
+          letter-spacing: 1px;
+          color: #fff; }
+        .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form button:before {
+          position: absolute;
+          content: '';
+          display: block;
+          background: #fff;
+          color: #111;
+          display: grid;
+          inset: 0;
+          place-content: center;
+          pointer-events: none;
+          position: absolute;
+          transform: translateX(-100%);
+          transition: transform 0.2s;
+          border: 1px solid #0975f5; }
+        .site_main .layout-pageContact .wrapbox-content-page-contact .box-contact .box-send-contact .col-left .contact-form button:hover::before {
+          transform: translateX(0); }
+.site_main_newletter {
+  padding: 45px 0; }
+  .site_main_newletter .conten-newletter {
+    margin: auto;
+    max-width: 525px;
+    width: 100%; }
+    .site_main_newletter .conten-newletter h2 {
+      font-size: 22px;
+      line-height: 1.5;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin: 0;
+      color: #0975f5;
+      font-family: "Quicksand", sans-serif;
+      text-align: center; }
+    .site_main_newletter .conten-newletter p {
+      font-size: 14px;
+      line-height: 28px;
+      margin: 0 auto 20px;
+      font-family: "Quicksand", sans-serif;
+      text-align: center; }
+    .site_main_newletter .conten-newletter .form-letter .form-group {
+      position: relative;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between; }
+      .site_main_newletter .conten-newletter .form-letter .form-group input {
+        width: calc(100% - 110px);
+        height: 50px;
+        line-height: 25px;
+        color: #999999;
+        padding: 10px 20px;
+        border: 1px solid #d4d6d8;
+        box-shadow: none;
+        outline: none !important;
+        transition: initial;
+        font-size: 12px;
+        border-radius: 2px;
+        box-shadow: 0 1px #d4d6d8 inset;
+        transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; }
+        .site_main_newletter .conten-newletter .form-letter .form-group input::placeholder {
+          color: #666;
+          font-family: "Quicksand", sans-serif;
+          font-size: 12px; }
+      .site_main_newletter .conten-newletter .form-letter .form-group .btn-39 {
+        border: 1px solid;
+        box-sizing: border-box;
+        display: block;
+        font-weight: 900;
+        overflow: hidden;
+        position: relative;
+        text-transform: uppercase; }
+      .site_main_newletter .conten-newletter .form-letter .form-group .btn-39 .new {
+        background: #fff;
+        color: #000;
+        display: grid;
+        inset: 0;
+        place-content: center;
+        pointer-events: none;
+        position: absolute;
+        transform: translateX(-100%);
+        transition: transform 0.2s; }
+      .site_main_newletter .conten-newletter .form-letter .form-group .btn-39:hover .new {
+        transform: translateX(0);
+        border: 1px solid #0975f5;
+        color: #666666; }
+      .site_main_newletter .conten-newletter .form-letter .form-group button {
+        font-weight: 500;
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        height: 50px;
+        width: 100px;
+        display: inline-block;
+        padding: 10px 28px;
+        line-height: normal;
+        border: 1px solid #ffffff;
+        background: #0975f5;
+        color: #fff; }
+        .site_main_newletter .conten-newletter .form-letter .form-group button::hover span {
+          color: #666666; }
+        .site_main_newletter .conten-newletter .form-letter .form-group button span {
+          font-family: 'Quicksand', sans-serif;
+          text-align: center;
+          font-size: 12px;
+          text-align: center;
+          letter-spacing: 1px;
+          color: #fff; }
+        .site_main_newletter .conten-newletter .form-letter .form-group button:before {
+          position: absolute;
+          content: '';
+          display: block;
+          background: #fff;
+          color: #111;
+          display: grid;
+          inset: 0;
+          place-content: center;
+          pointer-events: none;
+          position: absolute;
+          transform: translateX(-100%);
+          transition: transform 0.2s;
+          border: 1px solid #0975f5; }
+        .site_main_newletter .conten-newletter .form-letter .form-group button:hover::before {
+          transform: translateX(0); }
+.site_main_introduce {
+  padding: 50px 0;
+  border-top: 1px solid #e1e3e4; }
+  .site_main_introduce .introduce-list {
+    width: 100%;
+    justify-content: space-around; }
+    .site_main_introduce .introduce-list .col {
+      display: flex; }
+      .site_main_introduce .introduce-list .col .icon {
+        position: relative;
+        margin: 10px 15px 0 0;
+        display: block; }
+        .site_main_introduce .introduce-list .col .icon img {
+          max-width: 30px; }
+      .site_main_introduce .introduce-list .col .introduce_description h2 {
+        margin-bottom: 4px;
+        color: #0975f5;
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: 14px;
+        font-family: 'Quicksand'; }
+      .site_main_introduce .introduce-list .col .introduce_description p {
+        font-size: 14px;
+        color: #666666;
+        overflow-x: hidden;
+        background: #f3f5f6;
+        position: initial !important;
+        font-family: 'Quicksand', sans-serif;
+        /* margin: 0 0 10px 0; */
+        line-height: 21px; }
+
+/*# sourceMappingURL=contact.min.css.map */

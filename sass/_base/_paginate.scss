@@ -1,0 +1,66 @@
+@import '_mixin.scss';
+$pagination_color: #032D5A !default;
+$pagination_background: #ffffff !default;
+$pagination_border: #eeeeee !default;
+$pagination_background_hover: #4B845E !default;
+$pagination_border_hover: #4B845E !default;
+.cate_perpage {
+    @include flex-position(center);
+}
+.pagination {
+    text-align: center;
+    &-box {
+        @include clear_box;
+        margin-top: 20px;
+    }
+    li, .page-item {
+        display: inline-block;
+        color: #ff5a00;
+        margin-right: 3px;
+    }
+    a, span, .page-link {
+        color: $pagination_color;
+        padding: 10px 15px;
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+        transition: 0.2s;
+        &:hover {
+            background: $pagination_background_hover;
+            color: #fff;
+            font-weight: 700;
+            border: 1px solid $pagination_border_hover;
+            transition: 0.2s;
+        }
+    }
+    li.active, .active {
+        a, span, .page-link {
+            border: 1px solid $pagination_border_hover;
+            color: #fff;
+            font-weight: 700;
+            background: $pagination_background_hover;
+        }
+    }
+    li:first-child,
+    li:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .pagination {
+        .page-item {
+            display: none !important;
+        }
+        .page-item:nth-child(1),
+        .page-item:nth-child(2),
+        .page-item:nth-child(3),
+        .page-item:nth-last-child(1),
+        .page-item:nth-last-child(2),
+        .page-item:nth-last-child(3),
+        .page-item.disabled,
+        .page-item.active {
+            display: inline-block !important;
+        }
+    }
+}
