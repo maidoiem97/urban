@@ -1,4 +1,4 @@
-@import '../_base/_grid.scss';
+
 @import '../_base/_animate.scss';
 @import '../_base/_mixin.scss';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
@@ -87,6 +87,7 @@ a{
 			    	    }
 			    	    .col-left{
 			    	    	.contact-form{
+
 			    	    		.input-group{
 			    	    			width: 100%;
     								margin-bottom: 20px;
@@ -166,7 +167,7 @@ a{
 								    border-radius: 0;
 								    font-weight: 600;
 								    text-transform: uppercase;
-								    width: 100%;
+								   
 								    font-weight: 500;
 								   
 								    display: inline-block;

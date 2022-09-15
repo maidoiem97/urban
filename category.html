@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/general.min.css">
     <link rel="stylesheet" href="./css/home.min.css">
     <link rel="stylesheet" href="./css/category.min.css">
+    <link rel="stylesheet" href="./css/reponsive.min.css">
     <script src="./libs/jquery/jquery.min.js"></script>
     <script src="./libs/owl-carousel/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="./libs/owl-carousel/owl.carousel.min.css">
@@ -21,7 +22,7 @@
                 <div class="container">
                     <ul class="menu-product">
                         <li><a href=""><span>Trang chủ</span></a></li>
-                        <li><a href=""><span>Danh mụci</span></a></li>
+                        <li><a href=""><span>Danh mục</span></a></li>
                         <li><a href=""><span>Tất cả sản phẩm</span></a></li>
                     </ul>
                 </div>
@@ -62,12 +63,123 @@
                                                                 <i class="fa fa-minus"></i>
                                                             </span>
                                                         </div>
-                                                        <div class="layered-content">
+                                                        <div class="layered-content bl-filter filter-brand">
                                                             <ul class="check-box-list">
                                                                 <li class="">
                                                                     <input type="checkbox">
                                                                     <label for="">Khác</label>
                                                                 </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="group-filter">
+                                                        <div class="trademark title-filter">
+                                                            <span>Giá sản phẩm</span>
+                                                            <span class="icon-dec">
+                                                                <i class="fa fa-minus"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="layered-content bl-filter filter-price">
+                                                            <ul class="check-box-list">
+                                                                <li class="">
+                                                                    <input type="checkbox" id="p1" name="cc" data-price="(price:product<=500000)">
+                                                                    <label for="p1">
+                                                                        <span>Dưới</span> 500,000₫
+                                                                    </label>   
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="p2" name="cc" data-price="((price:product>500000)&amp;&amp;(price:product<=1000000))">
+                                                                    <label for="p2">
+                                                                        500,000₫ - 1,000,000₫
+                                                                    </label>   
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="p3" name="cc" data-price="((price:product>1000000)&amp;&amp;(price:product<=1500000))">
+                                                                    <label for="p3">
+                                                                        1,000,000₫ - 1,500,000₫
+                                                                    </label>   
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="p4" name="cc" data-price="((price:product>2000000)&amp;&amp;(price:product<=5000000))">
+                                                                    <label for="p4">
+                                                                        2,000,000₫ - 5,000,000₫
+                                                                    </label>   
+                                                                </li>
+                                                                <li class="">
+                                                                    <input type="checkbox" id="p5" name="cc" data-price="(price:product>=5000000)">
+                                                                    <label for="p5">
+                                                                        <span>Trên</span> 5,000,000₫
+                                                                    </label>   
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="group-filter">
+                                                        <div class="trademark title-filter">
+                                                            <span>Màu sắc</span>
+                                                            <span class="icon-dec">
+                                                                <i class="fa fa-minus"></i>
+                                                            </span>
+                                                        </div>
+                                                        <div class="layered-content filter-color s-filter">
+                                                            <ul class="check-box-list">
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p1" value="Hồng" name="color-filter" data-color="(variant:product contains Hồng)">
+                                                                    <label title="hong" for="data-color-p1" style="background-color: #ef5777">Hồng</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p2" value="Vàng" name="color-filter" data-color="(variant:product contains Vàng)">
+                                                                    <label title="vang" for="data-color-p2" style="background-color: #ffd32a">Vàng</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p3" value="Xám" name="color-filter" data-color="(variant:product contains Xám)">
+                                                                    <label title="xam" for="data-color-p3" style="background-color: #d2dae2">Xám</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p4" value="Xanh" name="color-filter" data-color="(variant:product contains Xanh)">
+                                                                    <label title="xanh" for="data-color-p4" style="background-color: #3c40c6">Xanh</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p5" value="Xanh lá" name="color-filter" data-color="(variant:product contains Xanh lá)">
+                                                                    <label title="xanh-la" for="data-color-p5" style="background-color: #0be881">Xanh lá</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p6" value="Sen" name="color-filter" data-color="(variant:product contains Sen)">
+                                                                    <label title="sen" for="data-color-p6" style="background-color: #f53b57">Sen</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p7" value="Xanh biển" name="color-filter" data-color="(variant:product contains Xanh biển)">
+                                                                    <label title="xanh-bien" for="data-color-p7" style="background-color: #0fbcf9">Xanh biển</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p8" value="Đen" name="color-filter" data-color="(variant:product contains Đen)">
+                                                                    <label title="den" for="data-color-p8" style="background-color: #000000">Đen</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p9" value="Trắng" name="color-filter" data-color="(variant:product contains Trắng)">
+                                                                    <label title="trang" for="data-color-p9" style="background-color: #ffffff">Trắng</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p10" value="Đỏ" name="color-filter" data-color="(variant:product contains Đỏ)">
+                                                                    <label title="do" for="data-color-p10" style="background-color: #ff3f34">Đỏ</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p11" value="Tím" name="color-filter" data-color="(variant:product contains Tím)">
+                                                                    <label title="tim" for="data-color-p11" style="background-color: #a55eea">Tím</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p12" value="Pure Apple" name="color-filter" data-color="(variant:product contains Pure Apple)">
+                                                                    <label title="pure-apple" for="data-color-p12" style="background-color: #a8cebf">Pure Apple</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p13" value="Vàng sen" name="color-filter" data-color="(variant:product contains Vàng sen)">
+                                                                    <label title="vang-sen" for="data-color-p13" style="background-color: #e5a81a">Vàng sen</label>  
+                                                                </li>
+                                                                <li>
+                                                                    <input type="checkbox" id="data-color-p14" value="Cam" name="color-filter" data-color="(variant:product contains Cam)">
+                                                                    <label title="cam" for="data-color-p14" style="background-color: #fa8231">Cam</label>  
+                                                                </li>
+
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -90,23 +202,29 @@
                                             <h1 class="title-ct">Tất cả sản phẩm </h1>
                                         </div>
                                         <div class="col col-md-3 col-sm-12 col-xs-12">
-                                            <div class="collection-sortby">
-                                                <div class="list-option">
-                                                    <label class="label-tt" for="sort-by"><i class="fal fa-sort-alpha-down"></i></label>
-                                                    <span>
-                                                        <select name="" id="" class="sort-by">
-                                                            <option value="price-ascending">Giá: Tăng dần</option>
-                                                            <option value="price-ascending">Giá: Giảm dần</option>
-                                                            <option value="title-ascending">Tên: A-Z</option>
-                                                            <option value="title-ascending">Tên: Z-A</option>
-                                                            <option value="created-ascending">Mới nhất</option>
-                                                            <option value="created-ascending">Cũ nhất</option>
-                                                            <option value="best-selling">Bán chạy nhất</option>
-                                                            <option value="quantity-descending">Tồn kho: Giảm dần</option>
-                                                        </select>
-                                                    </span>
+                                           <div class="outer-sort-filter">
+                                                <div class="filterTagFullwidthButton-mobile">
+                                                    <i class="far fa-sliders-h"></i>
+                                                    <span>Bộ lọc</span>
                                                 </div>
-                                            </div>
+                                                <div class="collection-sortby">
+                                                    <div class="list-option">
+                                                        <label class="label-tt" for="sort-by"><i class="fal fa-sort-alpha-down"></i></label>
+                                                        <span>
+                                                            <select name="" id="" class="sort-by">
+                                                                <option value="price-ascending">Giá: Tăng dần</option>
+                                                                <option value="price-ascending">Giá: Giảm dần</option>
+                                                                <option value="title-ascending">Tên: A-Z</option>
+                                                                <option value="title-ascending">Tên: Z-A</option>
+                                                                <option value="created-ascending">Mới nhất</option>
+                                                                <option value="created-ascending">Cũ nhất</option>
+                                                                <option value="best-selling">Bán chạy nhất</option>
+                                                                <option value="quantity-descending">Tồn kho: Giảm dần</option>
+                                                            </select>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                           </div>
                                         </div>
                                     </div>
                                 </div>

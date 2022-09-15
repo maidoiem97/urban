@@ -1,4 +1,4 @@
-@import '../_base/_grid.scss';
+
 @import '../_base/_animate.scss';
 @import '../_base/_mixin.scss';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
@@ -29,6 +29,7 @@ a{
         &_search{
             .page-search{
                 padding: 0 0 20px 0;
+                width: 100%;
                 .heading-page{
                     position: relative;
                     text-align: center;

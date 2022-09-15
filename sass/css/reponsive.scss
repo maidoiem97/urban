@@ -1,12 +1,28 @@
-@import '../_base/_grid.scss';
+// @import '../_base/_grid.scss';
 @import '../_base/_animate.scss';
 @import '../_base/_mixin.scss';
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
 
-@include mq(lg, 'max'){
+	
+}
+.row {
+	margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+@media only screen and (max-width: 991px){
 	.site{
+		.site_header_search-box{
+			display: block;
+		}
 		.site_header_center{
 			&_box{
-				margin: 0 -15px;
+				
 			    display: -ms-flexbox;
 			    display: -webkit-flex;
 			    display: flex;
@@ -34,7 +50,7 @@
 			  	display: none!important;
 			}
 			.header_icon{
-				padding-left: 15px;
+				
 				.item{
 					padding: 0;
 					margin: 0;
@@ -54,17 +70,215 @@
 		.site_header_bottom{
 			display: none;
 		}
+
+		.site_main_product{
+			&_new{
+				.product-list{
+					.pro-loop{
+						width: 33.33333333%;	
+					}
+				}
+			}
+		}
+		
+
+		.site_main_category{
+			.heading-collection{
+				display: inline!important;
+				.hidden-sm{
+					display: none;
+				}
+				.title-ct{
+				    font-size: 20px !important;
+				    text-align: center;
+				    margin: 0 0 15px!important;
+				}
+				.title-filter{
+					display: none;
+				}
+				.outer-sort-filter{
+					align-items: center;
+					display: flex;
+					.filterTagFullwidthButton-mobile{
+						display: block !important;
+					}
+				}
+			}
+		}
+
 		.footer-top{
 			display: none;
 		}
 			
 		.footer_mobi{
-			display: block;
+			display: block !important;
 		}
+
+		//introduct
+		.sidebar-page{
+			.group-menu{
+				.title-page{
+					span{
+						display: inline-block !important;;
+					    margin-left: 35px;
+					    transition: all 0.5s ease;
+					    -webkit-transition: all 0.5s ease;
+					}
+					
+				}
+				.active .title-page{
+					h2{
+						span{
+							transform: rotate(180deg);
+						    -webkit-transform: rotate(180deg);
+						    -moz-transform: rotate(180deg);
+						}
+					}
+				}
+
+				.menu-page{
+					display: none;
+				}
+				
+
+				
+			}
+			
+
+			.box-banner-page{
+				display: none;
+			}
+
+		}
+
 	}
 }
 
+@media screen and (max-width: 767px){
+	
+	.site_header_center{
+		&_box{
+			margin: 0 -15px;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-justify-content: space-between;
+		    justify-content: space-between;
+		    -webkit-flex-flow: row nowrap;
+		    -ms-flex-flow: row nowrap;
+		    flex-flow: row nowrap;
+			.header-wrap-hamburger{
+				padding: 0 15px;
+				display: block!important;
 
+			}
+			.header-hide,{
+			  	display: none!important;
+			}
+		}
+		.header_logo{
+		  	width: 65%;
+		  	display: flex;
+		  	justify-content: center;
+		}
+		
+		.header-hide{
+		  	display: none!important;
+		}
+		.header_icon{
+			padding-right: 15px;
+			.item{
+				padding: 0;
+				margin: 0;
+				    display: inline-block;
+				    transition: opacity 150ms linear;
+				    font-size: 13px;
+				    margin-left: 6px;
+				    cursor: pointer;
+				    color: #000;
+				    display: flex;
+				    display: -webkit-flex;
+				    align-items: center;
+			}
+		}
+
+	}
+	.site_header_bottom{
+		display: none;
+	}
+	
+	.site_main_images{
+		.site_main_images__list{
+			padding: 0;
+			.site_main_images_item{
+				margin-top: 15px;
+
+			}
+			.img-item{
+				width: 100%;
+			}
+		}
+		
+	}
+	.site_main_product{
+		&_new{
+			.product-list{
+				.pro-loop{
+					
+				}
+			}
+		}
+	}
+	.site_main_product-all{
+		.col{
+			width: calc(100% - (100% / (12 / (12 - 12) )) );
+		}
+	}
+	.site_main_collection-info{
+		.col{
+			width: calc(100% - (100% / (12 / (12 - 12) )) );
+		}
+	}
+	.site_main_introduce{
+		.policy-list-content{
+			display: flex;
+		    display: -webkit-flex;
+		    flex-flow: row wrap;
+	        flex-direction: column;
+		    margin: 0 -15px;
+		    .policy_item {
+	    	    margin: 0 0 15px 0;
+	    	    width: 100%;
+	    	    &:last-child{
+	    	    	margin: 0;
+	    	    }
+		    }
+		}
+	}
+	.site_main_blog_content{
+		#blog-slide{
+
+		}
+	}
+
+	.addThis_listSharing{
+		display: none!important;
+	}
+	.actionToolbar_mobile{
+		display: block!important;
+	}
+
+	//search
+	.wrapbox-content-page{
+		.content-page{
+			.expanded-message{
+				.search-field{
+					width: 100% !important;
+				}
+			}
+		}
+	}
+}
 @media screen and (min-width: 1200px){
 	.container-fluid {
 	    max-width: 1600px;
