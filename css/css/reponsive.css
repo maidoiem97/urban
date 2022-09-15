@@ -1,224 +1,4 @@
 @charset "UTF-8";
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap; }
-
-.row {
-  width: calc(100% + 15px*2);
-  float: left;
-  margin: 0 -15px;
-  display: flex;
-  flex-wrap: wrap; }
-
-.col {
-  width: 100%;
-  float: left;
-  padding: 0 15px;
-  transition: 0.2s; }
-
-/* dùng xs cho màn điện thoại có kích thước nhỏ hơn 576px */
-@media only screen and (max-width: 575px) {
-  .container {
-    max-width: 100%; }
-
-  .col-xs-1 {
-    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
-
-  .col-xs-2 {
-    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
-
-  .col-xs-3 {
-    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
-
-  .col-xs-4 {
-    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
-
-  .col-xs-5 {
-    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
-
-  .col-xs-6 {
-    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
-
-  .col-xs-7 {
-    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
-
-  .col-xs-8 {
-    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
-
-  .col-xs-9 {
-    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
-
-  .col-xs-10 {
-    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
-
-  .col-xs-11 {
-    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
-
-  .col-xs-12 {
-    width: 100%; } }
-/* dùng sm cho màn điện thoại có kích thước lớn hơn 576px */
-@media only screen and (min-width: 576px) {
-  .container {
-    max-width: 100%; }
-
-  .col-sm-1 {
-    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
-
-  .col-sm-2 {
-    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
-
-  .col-sm-3 {
-    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
-
-  .col-sm-4 {
-    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
-
-  .col-sm-5 {
-    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
-
-  .col-sm-6 {
-    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
-
-  .col-sm-7 {
-    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
-
-  .col-sm-8 {
-    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
-
-  .col-sm-9 {
-    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
-
-  .col-sm-10 {
-    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
-
-  .col-sm-11 {
-    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
-
-  .col-sm-12 {
-    width: 100%; } }
-/* dùng md cho màn điện thoại có kích thước lớn hơn 768px */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 100% px; }
-
-  .col-md-1 {
-    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
-
-  .col-md-2 {
-    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
-
-  .col-md-3 {
-    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
-
-  .col-md-4 {
-    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
-
-  .col-md-5 {
-    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
-
-  .col-md-6 {
-    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
-
-  .col-md-7 {
-    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
-
-  .col-md-8 {
-    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
-
-  .col-md-9 {
-    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
-
-  .col-md-10 {
-    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
-
-  .col-md-11 {
-    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
-
-  .col-md-12 {
-    width: 100%; } }
-/* dùng lg cho màn điện thoại có kích thước lớn hơn 992px */
-@media only screen and (min-width: 992px) {
-  .container {
-    max-width: 960px; }
-
-  .col-lg-1 {
-    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
-
-  .col-lg-2 {
-    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
-
-  .col-lg-3 {
-    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
-
-  .col-lg-4 {
-    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
-
-  .col-lg-5 {
-    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
-
-  .col-lg-6 {
-    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
-
-  .col-lg-7 {
-    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
-
-  .col-lg-8 {
-    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
-
-  .col-lg-9 {
-    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
-
-  .col-lg-10 {
-    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
-
-  .col-lg-11 {
-    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
-
-  .col-lg-12 {
-    width: 100%; } }
-/* dùng xl cho màn điện thoại có kích thước lớn hơn 1200px */
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px; }
-
-  .col-xl-1 {
-    width: calc(100% - (100% / (12 / (12 - 1) )) ); }
-
-  .col-xl-2 {
-    width: calc(100% - (100% / (12 / (12 - 2) )) ); }
-
-  .col-xl-3 {
-    width: calc(100% - (100% / (12 / (12 - 3) )) ); }
-
-  .col-xl-4 {
-    width: calc(100% - (100% / (12 / (12 - 4) )) ); }
-
-  .col-xl-5 {
-    width: calc(100% - (100% / (12 / (12 - 5) )) ); }
-
-  .col-xl-6 {
-    width: calc(100% - (100% / (12 / (12 - 6) )) ); }
-
-  .col-xl-7 {
-    width: calc(100% - (100% / (12 / (12 - 7) )) ); }
-
-  .col-xl-8 {
-    width: calc(100% - (100% / (12 / (12 - 8) )) ); }
-
-  .col-xl-9 {
-    width: calc(100% - (100% / (12 / (12 - 9) )) ); }
-
-  .col-xl-10 {
-    width: calc(100% - (100% / (12 / (12 - 10) )) ); }
-
-  .col-xl-11 {
-    width: calc(100% - (100% / (12 / (12 - 11) )) ); }
-
-  .col-xl-12 {
-    width: 100%; } }
 /* 
 	thuộc tính transform dùng để tạo hiệu ứng
 		rotate(Độ:deg): hiệu ứng xoay VD rotate(90deg)
@@ -251,9 +31,20 @@
 /* dùng cho một vài thuộc tính riêng cho trình duyện VD: transition, box-shadow */
 /* căn giữa chiều dọc và ngang trên 1 box */
 /* background opacity */
-@media only screen and (min-width: 992px) {
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1200px; }
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px; }
+
+@media only screen and (max-width: 991px) {
+  .site .site_header_search-box {
+    display: block; }
   .site .site_header_center_box {
-    margin: 0 -15px;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -273,9 +64,79 @@
     justify-content: center; }
   .site .site_header_center .header-hide {
     display: none !important; }
-  .site .site_header_center .header_icon {
+  .site .site_header_center .header_icon .item {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    transition: opacity 150ms linear;
+    font-size: 13px;
+    margin-left: 6px;
+    cursor: pointer;
+    color: #000;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center; }
+  .site .site_header_bottom {
+    display: none; }
+  .site .site_main_product_new .product-list .pro-loop {
+    width: 33.33333333%; }
+  .site .site_main_category .heading-collection {
+    display: inline !important; }
+    .site .site_main_category .heading-collection .hidden-sm {
+      display: none; }
+    .site .site_main_category .heading-collection .title-ct {
+      font-size: 20px !important;
+      text-align: center;
+      margin: 0 0 15px !important; }
+    .site .site_main_category .heading-collection .title-filter {
+      display: none; }
+    .site .site_main_category .heading-collection .outer-sort-filter {
+      align-items: center;
+      display: flex; }
+      .site .site_main_category .heading-collection .outer-sort-filter .filterTagFullwidthButton-mobile {
+        display: block !important; }
+  .site .footer-top {
+    display: none; }
+  .site .footer_mobi {
+    display: block !important; }
+  .site .sidebar-page .group-menu .title-page span {
+    display: inline-block !important;
+    margin-left: 35px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease; }
+  .site .sidebar-page .group-menu .active .title-page h2 span {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg); }
+  .site .sidebar-page .group-menu .menu-page {
+    display: none; }
+  .site .sidebar-page .box-banner-page {
+    display: none; } }
+@media screen and (max-width: 767px) {
+  .site_header_center_box {
+    margin: 0 -15px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap; }
+    .site_header_center_box .header-wrap-hamburger {
+      padding: 0 15px;
+      display: block !important; }
+    .site_header_center_box .header-hide {
+      display: none !important; }
+  .site_header_center .header_logo {
+    width: 65%;
+    display: flex;
+    justify-content: center; }
+  .site_header_center .header-hide {
+    display: none !important; }
+  .site_header_center .header_icon {
     padding-right: 15px; }
-    .site .site_header_center .header_icon .item {
+    .site_header_center .header_icon .item {
       padding: 0;
       margin: 0;
       display: inline-block;
@@ -287,12 +148,43 @@
       display: flex;
       display: -webkit-flex;
       align-items: center; }
-  .site .site_header_bottom {
+
+  .site_header_bottom {
     display: none; }
-  .site .footer-top {
-    display: none; }
-  .site .footer_mobi {
-    display: block; } }
+
+  .site_main_images .site_main_images__list {
+    padding: 0; }
+    .site_main_images .site_main_images__list .site_main_images_item {
+      margin-top: 15px; }
+    .site_main_images .site_main_images__list .img-item {
+      width: 100%; }
+
+  .site_main_product-all .col {
+    width: calc(100% - (100% / (12 / (12 - 12) )) ); }
+
+  .site_main_collection-info .col {
+    width: calc(100% - (100% / (12 / (12 - 12) )) ); }
+
+  .site_main_introduce .policy-list-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    margin: 0 -15px; }
+    .site_main_introduce .policy-list-content .policy_item {
+      margin: 0 0 15px 0;
+      width: 100%; }
+      .site_main_introduce .policy-list-content .policy_item:last-child {
+        margin: 0; }
+
+  .addThis_listSharing {
+    display: none !important; }
+
+  .actionToolbar_mobile {
+    display: block !important; }
+
+  .wrapbox-content-page .content-page .expanded-message .search-field {
+    width: 100% !important; } }
 @media screen and (min-width: 1200px) {
   .container-fluid {
     max-width: 1600px;
