@@ -168,7 +168,7 @@ $(document).ready(function() {
   $('.hamburger-menu' ).on('click', function(event) {
     event.preventDefault();
     $(this).toggleClass('active');
-    $('.menu-mobi').toggle('active');
+    $('.menu-mobi').toggleClass('active');
   });
 
   $('a .parent' ).on('click', function(event) {
@@ -213,8 +213,16 @@ $(document).ready(function() {
   $(".title-page").click(function () {
     $( ".menu-page" ).toggle('active');
   });  
-  $(".mp-parent").click(function () {
-    
+  $(".mp-parent i").click(function () {
+      var id =$(this).closest('.mp-parent').data('id');
+      var parents =  $(this).closest('.mb-menu');
+      console.log('.list-child #'+id+'');
+      parents.find('.mm-panel').addClass('mm-subopened');
+      parents.find('#'+id+'').addClass('mm-opened');
+  });  
+  $(".list-child  i").click(function () {
+      $(this).closest('.mb-menu').find('.mm-panel').removeClass('mm-subopened');
+      $(this).closest('.mb-menu').find('.list-child').removeClass('mm-opened');
   });  
 
 });
